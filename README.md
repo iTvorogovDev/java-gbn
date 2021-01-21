@@ -9,7 +9,7 @@ The code provided in this repository is meant **ONLY** as a portfolio entry for 
 1. Java code compiled with openjdk 1.8.0_242
 1. Built with GNU Make 4.1
 
-## INSTRUCTIONS----
+## INSTRUCTIONS
 2. From within the root folder, run make command
 2. Start up the network emulator
 2. Start up the receiver using receiver.sh
@@ -18,9 +18,15 @@ The code provided in this repository is meant **ONLY** as a portfolio entry for 
 For convenience, a sample file for transferring is included as 'big_example' in the submission
 
 ## SHELL SCRIPTS EXECUTION FORMAT
-./receiver.sh <hostname for the network emulator> <UDP port number used by the link emulator to receive ACKs from the receiver> <UDP port number used by the 3 receiver to receive data from the emulator> <name of the file into which the received data is written>
+./receiver.sh <hostname for the network emulator> 
+              <UDP port number used by the link emulator to receive ACKs from the receiver>
+              <UDP port number used by the 3 receiver to receive data from the emulator> 
+              <name of the file into which the received data is written>
 
-./sender.sh <host address of the network emulator> <UDP port number used by the emulator to receive data from the sender> <UDP port number used by the sender to receive ACKs from the emulator> <name of the file to be transferred>
+./sender.sh <host address of the network emulator> 
+            <UDP port number used by the emulator to receive data from the sender> 
+            <UDP port number used by the sender to receive ACKs from the emulator> 
+            <name of the file to be transferred>
 
 ## EXAMPLE EXECUTION
 ./nEmulator-linux386 24077 ubuntu1804-004.student.cs.uwaterloo.ca 41691 24869 ubuntu1804-008.student.cs.uwaterloo.ca 9992 1 0.2 1
