@@ -17,7 +17,7 @@ The code provided in this repository is meant **ONLY** as a portfolio entry for 
 
 For convenience, a sample file for transferring is included as 'big_example' in the submission
 
-## SHELL SCRIPTS EXECUTION FORMAT
+## PROGRAM EXECUTION FORMAT
 ./receiver.sh \<host name/address for the network emulator\>  
               \<UDP port number used by the link emulator to receive ACKs from the receiver\>  
               \<UDP port number used by the 3 receiver to receive data from the emulator\>  
@@ -37,3 +37,8 @@ For convenience, a sample file for transferring is included as 'big_example' in 
 \<maximum delay of the link in units of millisecond\>  
 \<packet discard probability\>  
 \<verbose-mode\> (Boolean: Set to 1, the network emulator will output its internal processing).
+
+## Example Execution
+1. On **host1**: nEmulator 9991 host2 9994 9993 host3 9992 1 0.2 0
+1. On **host2**: java receiver host1 9993 9994 \<output File\>
+1. On **host3**: java sender host1 9991 9992 \<input file\>
