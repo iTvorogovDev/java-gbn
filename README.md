@@ -28,12 +28,12 @@ For convenience, a sample file for transferring is included as 'big_example' in 
             \<UDP port number used by the sender to receive ACKs from the emulator\>  
             \<name of the file to be transferred\>
             
-./nEmulator-linux386 \<emulator's receiving UDP port number in the forward (sender) direction\>  
-\<receiver’s network address\>
-\<receiver’s receiving UDP port number\>
-\<emulator's receiving UDP port number in the backward (receiver) direction\>
-\<sender’s network address\>
-\<sender’s receiving UDP port number\>
-\<maximum delay of the link in units of millisecond\>
-\<packet discard probability\>
+./nEmulator-linux386 \<emulator's receiving UDP port number in the forward (sender) direction\>   
+\<receiver’s network address\>  
+\<receiver’s receiving UDP port number\>  
+\<emulator's receiving UDP port number in the backward (receiver) direction\>  
+\<sender’s network address\>  
+\<sender’s receiving UDP port number\>  
+\<maximum delay of the link in units of millisecond\>  
+\<packet discard probability\>  
 \<verbose-mode\> (Boolean: Set to 1, the network emulator will output its internal processing).
