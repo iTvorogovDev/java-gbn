@@ -18,19 +18,22 @@ The code provided in this repository is meant **ONLY** as a portfolio entry for 
 For convenience, a sample file for transferring is included as 'big_example' in the submission
 
 ## SHELL SCRIPTS EXECUTION FORMAT
-./receiver.sh \<hostname for the network emulator\>  
+./receiver.sh \<host name/address for the network emulator\>  
               \<UDP port number used by the link emulator to receive ACKs from the receiver\>  
               \<UDP port number used by the 3 receiver to receive data from the emulator\>  
               \<name of the file into which the received data is written\>
 
-./sender.sh \<host address of the network emulator\>  
+./sender.sh \<host  of the network emulator\>  
             \<UDP port number used by the emulator to receive data from the sender\>  
             \<UDP port number used by the sender to receive ACKs from the emulator\>  
-            \<name of the file to be transferred\>  
-
-## EXAMPLE EXECUTION
-./nEmulator-linux386 24077 ubuntu1804-004.student.cs.uwaterloo.ca 41691 24869 ubuntu1804-008.student.cs.uwaterloo.ca 9992 1 0.2 1
-
-./receiver.sh 'ubuntu1804-002.student.cs.uwaterloo.ca' 24869 41691 'output'
-
-./sender.sh 'ubuntu1804-002.student.cs.uwaterloo.ca' 24077 9992 'big_example'
+            \<name of the file to be transferred\>
+            
+./nEmulator-linux386 \<emulator's receiving UDP port number in the forward (sender) direction\>  
+\<receiver’s network address\>
+\<receiver’s receiving UDP port number\>
+\<emulator's receiving UDP port number in the backward (receiver) direction\>
+\<sender’s network address\>
+\<sender’s receiving UDP port number\>
+\<maximum delay of the link in units of millisecond\>
+\<packet discard probability\>
+\<verbose-mode\> (Boolean: Set to 1, the network emulator will output its internal processing).
