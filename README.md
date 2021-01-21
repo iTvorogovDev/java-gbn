@@ -10,10 +10,10 @@ The code provided in this repository is meant **ONLY** as a portfolio entry for 
 1. Built with GNU Make 4.1
 
 ## INSTRUCTIONS
-2. From within the root folder, run make command
-2. Start up the network emulator
-2. Start up the receiver using receiver.sh
-2. Start up the sender using sender.sh
+1. From within the root folder, run make command
+1. Start up the network emulator
+1. Start up the receiver using receiver.sh
+1. Start up the sender using sender.sh
 
 For convenience, a sample file for transferring is included as 'big_example' in the submission
 
